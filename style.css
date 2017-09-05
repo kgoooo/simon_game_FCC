@@ -5,7 +5,6 @@ body {
 	background-attachment: fixed;	
 }
 
-
 div {
 	text-align: center;
 }
@@ -14,11 +13,18 @@ div {
 	height: 200px;
 	display: inline-block;
 	border-radius: 20px;
+	border: 1px solid rgba(000,000,000, 0.5);	
+	cursor: pointer;	
 }
 
 .blue {
 	background-color: #0093E9;
 	background-image: linear-gradient(270deg, #0093E9 0%, #80D0C7 100%);
+}
+.blueHighlight,
+.blue:active {
+	background-color: #3898E0;
+	background-image: linear-gradient(270deg, #3898E0 0%, #A1DCD6 100%);
 }
 
 .green {
@@ -26,14 +32,31 @@ div {
 	background-image: linear-gradient(180deg, #40ca32 0%, #16A085 100%);	
 }
 
+.greenHighlight,
+.green:active {
+	background-color: #40ca32;
+	background-image: linear-gradient(180deg, #93D98B 0%, #16A06E 100%);
+}
+
 .yellow {
-	background-color: #ffe9b2;
-	background-image: linear-gradient(270deg, #ffe9b2 0%, #ffd100 100%);	
+	background-color: #ffd100;
+	background-image: linear-gradient(270deg, #FFE29D 0%, #ffd100 100%);	
+}
+
+.yellowHighlight,
+.yellow:active {
+	background-color: #ffd100;
+	background-image: linear-gradient(270deg, #FDEBC1 0%, #FFD517 100%);
 }
 
 .red {
-	background-color: #ffbf3b;
-	background-image: linear-gradient(359deg, #ffbf3b 0%, #FF2525 74%);	
+	background-color: #FF2525;
+	background-image: linear-gradient(359deg, #FFA43B 0%, #FF2525 74%);	
+}
+.redHighlight,
+.red:active {
+	background-color: #FF2525;
+	background-image: linear-gradient(359deg, #FFC25F 0%, #FF3D3D 74%);	
 }
 
 #color-buttons {
@@ -45,3 +68,9 @@ div {
 #counter {
 	display: inline-block
 }
+
+
+.press {
+	border: 5px solid #000;
+} 
+	
