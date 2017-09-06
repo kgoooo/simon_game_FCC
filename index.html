@@ -4,6 +4,7 @@
 		<title>Simon Game - Kristen Goehringer</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 		<script
 		src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
@@ -13,23 +14,23 @@
 	<body>
 		<div>
 			<div id="simon">
+				<h1 class="shadow">Simon!</h1>
 				<div id="controls">
-					<button id="on">On</button>
-					<button id="off">Off</button>
-					<button id="strict">Strict</button>
-					<button id="restart">Restart</button>
+					<button id="on" class="shadow">Start</button>
+					<button id="strict" class="shadow" onClick="strictMode()">Strict</button>
+					<button id="restart" class="shadow">Restart</button>
+					<div id="counterDiv" class="shadow">Round:<span id="counter"></span></div>				
 				</div>
 				<div id="color-buttons">
 					<div>
-						<div id="R" class="red game-btn" onClick="humanButtonPress(0), audio0.play()"></div>					
+						<div id="Y" class="yellow game-btn" onClick="humanButtonPress(3), audio3.play()"></div>													
+						<div id="R" class="red game-btn" onClick="humanButtonPress(0), audio0.play()"></div>
 					</div>
 					<div>
-						<div id="Y" class="yellow game-btn" onClick="humanButtonPress(2), audio2.play()"></div>
-						<div id="counter">01</div>				
+						<div id="G" class="green game-btn" onClick="humanButtonPress(2), audio2.play()"></div>													
 						<div id="B" class="blue game-btn" onClick="humanButtonPress(1), audio1.play()"></div>						
 					</div>
 					<div>
-						<div id="G" class="green game-btn" onClick="humanButtonPress(3), audio3.play()"></div>						
 					</div>
 				</div>
 			</div>

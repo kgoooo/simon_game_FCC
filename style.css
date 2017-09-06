@@ -3,74 +3,105 @@ body {
 	background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
 	height: 100vh;
 	background-attachment: fixed;	
+	font-family: 'Oswald', sans-serif;
+	color: #222;	
+}
+
+h1 {
+	font-size: 60px;
+	margin-bottom: 8px;
+}
+
+button{
+	font-family: 'Oswald', sans-serif;	
+	background: none;
+	border: none;
+	cursor: pointer;
+	font-size: 20px;
+	color: #222;	
 }
 
 div {
 	text-align: center;
 }
+
+.shadow{
+	text-shadow: 0 0 3px rgba(000, 000, 000, 0.3);
+}
 .game-btn {
 	width: 200px;
 	height: 200px;
 	display: inline-block;
-	border-radius: 20px;
-	border: 1px solid rgba(000,000,000, 0.5);	
-	cursor: pointer;	
+	cursor: pointer;
+	margin: -3px;	
 }
 
 .blue {
 	background-color: #0093E9;
-	background-image: linear-gradient(270deg, #0093E9 0%, #80D0C7 100%);
+	background-image: linear-gradient(320deg, #0093E9 0%, #80D0C7 100%);
+	border-radius: 50% 0 100% 0;
+	border-bottom: 10px solid #005F98;
 }
 .blueHighlight,
 .blue:active {
 	background-color: #3898E0;
-	background-image: linear-gradient(270deg, #3898E0 0%, #A1DCD6 100%);
+	background-image: linear-gradient(320deg, #3898E0 0%, #A1DCD6 100%);
 }
 
 .green {
 	background-color: #40ca32;
-	background-image: linear-gradient(180deg, #40ca32 0%, #16A085 100%);	
+	background-image: linear-gradient(220deg, #52DE44 0%, #059531 100%);
+	border-radius:  0 50% 0 100%;
+	border-bottom: 10px solid #026D23;
 }
 
 .greenHighlight,
 .green:active {
 	background-color: #40ca32;
-	background-image: linear-gradient(180deg, #93D98B 0%, #16A06E 100%);
+	background-image: linear-gradient(220deg, #93D98B 0%, #16A06E 100%);
 }
 
 .yellow {
 	background-color: #ffd100;
-	background-image: linear-gradient(270deg, #FFE29D 0%, #ffd100 100%);	
+	background-image: linear-gradient(310deg, #FFE29D 0%, #EEC300 100%);	
+	border-radius: 100% 0 50% 0;	
 }
 
 .yellowHighlight,
 .yellow:active {
 	background-color: #ffd100;
-	background-image: linear-gradient(270deg, #FDEBC1 0%, #FFD517 100%);
+	background-image: linear-gradient(300deg, #FDEBC1 0%, #FDDB3E 100%);
 }
 
 .red {
 	background-color: #FF2525;
-	background-image: linear-gradient(359deg, #FFA43B 0%, #FF2525 74%);	
+	background-image: linear-gradient(45deg, #FFA43B 0%, #FF2525 74%);	
+	border-radius: 0 100% 0 50%;	
 }
 .redHighlight,
 .red:active {
 	background-color: #FF2525;
-	background-image: linear-gradient(359deg, #FFC25F 0%, #FF3D3D 74%);	
+	background-image: linear-gradient(35deg, #FFC25F 0%, #FF3D3D 74%);	
 }
 
 #color-buttons {
 	width: 500px;
 	margin-left: auto;
 	margin-right: auto;
+	margin-top: 50px;
 }
 
-#counter {
-	display: inline-block
+#counterDiv {
+	display: block;
+	font-size: 30px;
 }
 
+#on,
+#strict,
+#restart {
+	outline: none;
+}
 
-.press {
-	border: 5px solid #000;
-} 
-	
+#on:hover {border-bottom: 2px solid #1FE62B;}
+#strict:hover {border-bottom: 2px solid #FF8900;}
+#restart:hover {border-bottom: 2px solid #FF0000;}
